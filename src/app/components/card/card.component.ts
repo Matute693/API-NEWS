@@ -18,7 +18,6 @@ export class CardComponent implements OnInit {
 
   faces() {
     this.apiServices.getFaces().subscribe( resp => {
-      console.log(resp.articles[0])
       this.noticias = resp.articles
     })
   }

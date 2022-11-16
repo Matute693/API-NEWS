@@ -9,12 +9,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
+import { MoreNewsComponent } from './pages/more-news/more-news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CardComponent,
+    MoreNewsComponent,
   ],
   imports: [
     BrowserModule,
