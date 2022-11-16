@@ -11,6 +11,7 @@ export class EndpointService {
 
   private apiKey: string = 'af860ab9576a430c82869a4f7f5a25ba'
   private country: string = 'us'
+  private q: string = 'bitcoin'
 
   constructor( private http: HttpClient) { }
 
@@ -26,6 +27,20 @@ export class EndpointService {
         return resp
       }),
     );;
+  }
+
+
+  getSportNews(): Observable<any> {
+    const url = `${environment.apiUrl}/everything`;
+    const params = new HttpParams()
+    .set('q', this.q)
+    .set('apiKey', this.apiKey)
+    return this.http.get(`${url}`, { params })
+    .pipe(
+      map( resp => {
+        return resp
+      } )
+    )
   }
 
 }

@@ -1,0 +1,9 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.card-img-top {
+    border-radius: 5px;
+}

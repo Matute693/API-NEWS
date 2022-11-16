@@ -1,1 +1,11 @@
-<p>more-news works!</p>
+<div class="container mt-3">
+    <button class="btn btn-light" (click)="goBack()">Volver atras</button>
+    <div class="grid-container my-4">
+        <div *ngFor="let item of sportNews">
+            <img class="card-img-top" [src]="item.urlToImage" alt="">    
+            <h3 >{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+            <a target="_blank" [href]="item.url" class="btn btn-success" >Ver noticia</a>
+        </div>
+    </div>
+</div>

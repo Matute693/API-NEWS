@@ -1,4 +1,6 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { EndpointService } from '../../services/endpoint.service';
 
 @Component({
   selector: 'app-more-news',
@@ -6,10 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./more-news.component.scss']
 })
 export class MoreNewsComponent implements OnInit {
+  
+  public sportNews: any[] = []
 
-  constructor() { }
+  constructor(
+    private apiService: EndpointService, 
+    private location: Location) { }
 
   ngOnInit(): void {
+    this.apiService.getSportNews().subscribe( resp => {
+      const { articles } = resp;
+      articles.length = 9;
+      this.sportNews = articles
+      console.log(resp)
+    })
+  }
+
+  goBack() {
+    this.location.back();
   }
 
 }
