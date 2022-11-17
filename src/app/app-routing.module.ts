@@ -9,9 +9,11 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'mas-noticias',
+    path: 'sports',
     component: MoreNewsComponent
-  }
+  },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
+
 ];
 
 @NgModule({

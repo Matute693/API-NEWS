@@ -10,6 +10,7 @@ import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
 import { MoreNewsComponent } from './pages/more-news/more-news.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MoreNewsComponent } from './pages/more-news/more-news.component';
     HomeComponent,
     CardComponent,
     MoreNewsComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
