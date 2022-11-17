@@ -10,7 +10,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'sports',
+    path: 'bitcoins',
     component: MoreNewsComponent
   },
   { path: 'tecnologia',  component: TechComponent },
