@@ -11,6 +11,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
 import { MoreNewsComponent } from './pages/more-news/more-news.component';
 import { LoadingComponent } from './components/loading/loading.component';
+import { TechComponent } from './pages/tech/tech.component';
+import { NoImagePipe } from './pipe/no-image.pipe';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { LoadingComponent } from './components/loading/loading.component';
     CardComponent,
     MoreNewsComponent,
     LoadingComponent,
+    TechComponent,
+    NoImagePipe,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<app-loading *ngIf="techNews.length <= 0"></app-loading>
+<div class="container mt-3">
+    <button class="btn btn-light" (click)="goBack()">Volver atras</button>
+    <div class="grid-container my-4">
+        <div *ngFor="let item of techNews">
+            <img class="card-img-top" [src]="item.urlToImage" alt="">    
+            <h3 >{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+            <a target="_blank" [href]="item.url" class="btn btn-success" >Ver noticia</a>
+        </div>
+    </div>
+</div>
+
+

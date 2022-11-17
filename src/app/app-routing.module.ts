@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { MoreNewsComponent } from './pages/more-news/more-news.component';
+import { TechComponent } from './pages/tech/tech.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,8 @@ const routes: Routes = [
     path: 'sports',
     component: MoreNewsComponent
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: 'tecnologia',  component: TechComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 
 ];
 
