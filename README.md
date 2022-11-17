@@ -13,5 +13,3 @@ Run proyect `ng serve`
 I use a news API to be able to display the data, I have created different sections, such as cryptocurrency news, technologies and the latest news
 
 URL API: [News API](https://newsapi.org/)
-
-URL DEPLOY: 

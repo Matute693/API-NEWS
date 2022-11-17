@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { EndpointService } from '../../services/endpoint.service';
 
 @Component({
@@ -6,20 +6,10 @@ import { EndpointService } from '../../services/endpoint.service';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
 
-  public noticias: any[] = []
+  // public noticias: any[] = []
+  @Input() news: any[] = []
 
-  constructor(private apiServices: EndpointService) { }
-
-  ngOnInit(): void {
-    this.faces(); 
-  }
-
-  faces() {
-    this.apiServices.getFaces().subscribe( resp => {
-      this.noticias = resp.articles
-    })
-  }
-
+  constructor() { }
 }

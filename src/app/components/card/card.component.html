@@ -1,6 +1,6 @@
 <div class="container">
     <div class="grid-card">
-      <div *ngFor="let item of noticias" class="card">
+      <div *ngFor="let item of news" class="card">
         <img [src]="item.urlToImage | noImage" class="card-img-top">
         <div class="card-body">
           <h3>{{ item.title | slice:0:32 }}</h3>
