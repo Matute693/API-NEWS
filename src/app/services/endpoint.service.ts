@@ -13,7 +13,7 @@ export class EndpointService {
   private apiKey: string = 'af860ab9576a430c82869a4f7f5a25ba'
   private country: string = 'us'
   private q: string = 'bitcoin'
-  private domains: string = 'techcrunch.com,thenextweb.com';
+  private domains: string = 'thenextweb.com';
 
   constructor( private http: HttpClient) { }
 

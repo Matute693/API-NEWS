@@ -10,6 +10,7 @@ Run proyect `ng serve`
 
 ## Information about proyect
 
-I use a news API to be able to display the data, I have created different sections, such as cryptocurrency news, technologies and the latest news
+I use a news API to be able to display the data, I have created different sections, such as cryptocurrency news, technologies and the latest news.
 
+I use the NEWS API Developer plan to have access to the developing API
 URL API: [News API](https://newsapi.org/)
