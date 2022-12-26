@@ -1,14 +1,16 @@
 <app-loading *ngIf="techNews.length <= 0"></app-loading>
 
 <div class="header-contenido text-white">
-    <h3>Ultimas novedades sobre tecnologia</h3>
-    <p>Ultimas tendencias tech | inteligencia artificial</p>
+    <h3>Latest news about technology</h3>
+    <p>Latest tech trends | artificial intelligence</p>
 </div>
 <header class="container-fluid inicio">
+    <div class="pt-3">
+        <button class="btn btn-light" (click)="goBack()">Go back</button>
+    </div>
 </header>
 
 <div class="container mt-3">
-    <button class="btn btn-light" (click)="goBack()">Volver atras</button>
     <div class="grid-container my-4">
         <div *ngFor="let item of techNews">
             <img class="card-img-top" [src]="item.urlToImage | noImage" alt="">    
